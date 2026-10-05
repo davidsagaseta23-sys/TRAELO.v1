@@ -1,0 +1,10 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
+body { @apply bg-white font-sans text-ink antialiased; overflow-x: hidden; }
+@layer components {
+  .wrap { @apply mx-auto w-full max-w-5xl px-6; }
+  .sec { @apply py-20 md:py-32; }
+  .h2 { @apply text-3xl font-extrabold tracking-tight md:text-5xl; }
+  .sub { @apply mt-3 text-lg text-ink/60; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
